@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u "lpmulligan" --password-stdin
-        docker image build -t lpmulligan/gitops:hellov1.0 .
+        docker image build -t lpmulligan/gitops:hellov1.1 .
         docker push lpmulligan/gitops:hellov1.1
